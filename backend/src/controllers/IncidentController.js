@@ -56,7 +56,7 @@ module.exports = {
         .first();
 
         //verifica se a ong é responsavel pela criação do post caso contrario não permite a ação 
-        if( incident.ong_id != ong_id){ 
+        if( incident.ong_id !== ong_id){ 
             return response.status(401).json({error: 'Operation not permitted.'});
         }
 
