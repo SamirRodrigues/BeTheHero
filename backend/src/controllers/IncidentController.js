@@ -9,7 +9,7 @@ module.exports = {
         const [count] = await connection('incidents').count();
 
         const incidents = await connection('incidents')
-        .join('ongs', 'ongs_id', '=', 'incidents.ong_id') //relaciona com outra tablela
+        .join('ongs', 'ongs.id', '=', 'incidents.ong_id') //relaciona com outra tablela
         .limit(5) // limitando o numero de casos que aparecem na pagina em 5 por vez
         .offset((page - 1) * 5) // determina quais os 5 que irão aparecer 
         .select
