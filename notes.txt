@@ -29,3 +29,8 @@
    * Driver: SELECT * FROM users
    * Query Builder: table('users').select('*').where()
    */
+   
+  Deploy (Hospedagem em servidores)
+  Back end - Heroku
+  Front end - netlify
+  Mobile - App para android (google play) Ver como criar app usando expo no rocketset
